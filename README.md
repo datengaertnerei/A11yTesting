@@ -19,6 +19,7 @@
 ### Tools
 
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- [auto-lighthouse](https://github.com/TGiles/auto-lighthouse)
 - [Sa11y QA assistant](https://ryersondmp.github.io/sa11y/)
 - [axe-core Browser Plugin](https://github.com/dequelabs/axe-core)
 - [Pa11y](https://pa11y.org/)

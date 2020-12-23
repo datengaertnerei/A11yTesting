@@ -1,0 +1,15 @@
+version: '2'
+services:
+  mongodb:
+    image: mongo
+  pally:
+    build: .
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    environment:
+      - NODE_ENV=production
+    ports:
+      - '3000:3000'
+      - '4000:4000'
+    depends_on:
+      - mongodb

@@ -4,10 +4,9 @@ services:
     image: mongo
   pally:
     build: .
-    stdin_open: true # docker run -i
-    tty: true        # docker run -t
     environment:
       - NODE_ENV=production
+      - PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
     ports:
       - '3000:3000'
       - '4000:4000'

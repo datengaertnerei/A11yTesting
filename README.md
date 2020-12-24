@@ -19,7 +19,7 @@
 ### Tools
 
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
-- [auto-lighthouse](https://github.com/TGiles/auto-lighthouse)
+- [lighthouse-batch](https://github.com/mikestead/lighthouse-batch)
 - [Sa11y QA assistant](https://ryersondmp.github.io/sa11y/)
 - [axe-core Browser Plugin](https://github.com/dequelabs/axe-core)
 - [Pa11y](https://pa11y.org/)
@@ -34,3 +34,18 @@ Im pally Verzeichnis stehen die Konfigurationsdateien für ein Pa11y Dashboard D
 docker-compose up -d
 ```
 
+Der Dashboard Webserver ist über http Port 4000 erreichbar.
+
+## Lighthouse Batch Spider
+
+Im lighhouse Verzeichnis liegt die Konfiguration für eine automatisierte Lighthouse Auswertung einer Website. Dazu baut man sich einmalig ein passendes Docker Image:
+
+```
+docker build -t datengaertnerei/lhbatch .
+```
+
+Danach ruft man den Batch so auf:
+
+```
+docker run -e SITE="https://www.datengaertnerei.com/" -v report:/lhbatch/report/lighthouse datengaertnerei/lhbatch
+```

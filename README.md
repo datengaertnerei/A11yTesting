@@ -48,7 +48,7 @@ docker build -t datengaertnerei/lhbatch .
 Danach ruft man den Batch so auf:
 
 ```
-docker run -e SITE="https://www.datengaertnerei.com/" datengaertnerei/lhbatch > summary.csv
+docker run --rm -e SITE="https://www.datengaertnerei.com/" datengaertnerei/lhbatch > summary.csv
 ```
 
 Das Ergebnis ist eine CSV Tabelle mit den konsolidierten Lighthouse Ergebnissen.

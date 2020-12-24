@@ -38,7 +38,7 @@ Der Dashboard Webserver ist über http Port 4000 erreichbar.
 
 ## Lighthouse Batch Spider
 
-Im lighhouse Verzeichnis liegt die Konfiguration für eine automatisierte Lighthouse Auswertung einer Website. Dazu baut man sich einmalig ein passendes Docker Image:
+Im lighthouse Verzeichnis liegt die Konfiguration für eine automatisierte Lighthouse Auswertung einer Website. Dazu baut man sich einmalig ein passendes Docker Image:
 
 ```
 docker build -t datengaertnerei/lhbatch .
@@ -47,5 +47,7 @@ docker build -t datengaertnerei/lhbatch .
 Danach ruft man den Batch so auf:
 
 ```
-docker run -e SITE="https://www.datengaertnerei.com/" -v report:/lhbatch/report/lighthouse datengaertnerei/lhbatch
+docker run -e SITE="https://www.datengaertnerei.com/" datengaertnerei/lhbatch > summary.csv
 ```
+
+Das Ergebnis ist eine CSV Tabelle mit den konsolidierten Lighthouse Ergebnissen.

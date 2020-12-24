@@ -17,6 +17,6 @@ RUN mkdir lhbatch && cd lhbatch && npm install lighthouse-batch -g && npm instal
 
 COPY spider.sh /lhbatch/spider.sh
 
-RUN chmod u+x /lhbatch/spider.sh
+RUN dos2unix -u /lhbatch/spider.sh && chmod u+x /lhbatch/spider.sh
 
 ENTRYPOINT "/lhbatch/spider.sh"

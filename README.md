@@ -16,6 +16,7 @@
 - [A11y Project](https://www.a11yproject.com/)
 - [Using ARIA](https://www.w3.org/TR/using-aria/)
 - [How to use NVDA and Firefox to test your web pages for accessibility](https://www.marcozehe.de/how-to-use-nvda-and-firefox-to-test-your-web-pages-for-accessibility/)
+- [Netzwerk Leichte Sprache e.V.](https://www.leichte-sprache.org/)
 
 ### Tools
 
@@ -26,6 +27,8 @@
 - [Pa11y](https://pa11y.org/)
 - [NVDA Screen Reader](https://www.nvaccess.org/)
 - [ESLint a11y plugin](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+- [Color Oracle](http://colororacle.org/)
+- [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/)
 
 ## Pa11y Dashboard Docker setup
 

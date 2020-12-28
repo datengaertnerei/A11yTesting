@@ -30,22 +30,6 @@
 - [Color Oracle](http://colororacle.org/)
 - [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/)
 
-## Pa11y Dashboard Docker setup
-
-Im pally Verzeichnis stehen die Konfigurationsdateien für ein Pa11y Dashboard Docker Setup. Mit den Dateien im Verzeichnis kann man einfach die Container starten mit
-
-```
-docker-compose up -d
-```
-
-Der Dashboard Webserver ist über http Port 4000 erreichbar. Mi folgendem cURL Befehl bekommt man alle konfigurierten Tasks über den Webservice als JSON Export:
-
-```
-curl -X GET -o pally.json http://localhost:3000/tasks
-```
-
-Mit einem POST auf diesen Endpunkt kann man einzelne Tasks einspielen. Dazu gibt es ein kleines Kommandozeilentool, mit dem der Export in einzelne Import Dateien aufgeteilt wird.
-
 ## Lighthouse Batch Spider
 
 Im lighthouse Verzeichnis liegt die Konfiguration für eine automatisierte Lighthouse Auswertung einer Website. Dazu baut man sich einmalig ein passendes Docker Image:
@@ -61,3 +45,25 @@ docker run --rm -e SITE="https://www.datengaertnerei.com/" datengaertnerei/lhbat
 ```
 
 Das Ergebnis ist eine CSV Tabelle mit den konsolidierten Lighthouse Ergebnissen.
+
+## Pa11y Dashboard Docker setup
+
+Im pally Verzeichnis stehen die Konfigurationsdateien für ein Pa11y Dashboard Docker Setup. Mit den Dateien im Verzeichnis kann man einfach die Container starten mit
+
+```
+docker-compose up -d
+```
+
+Der Dashboard Webserver ist über http Port 4000 erreichbar. Mi folgendem cURL Befehl bekommt man alle konfigurierten Tasks über den Webservice als JSON Export:
+
+```
+curl -X GET -o pally.json http://localhost:3000/tasks
+```
+
+Mit einem POST auf diesen Endpunkt kann man einzelne Tasks einspielen. 
+
+```
+curl -X POST -d @neu.json -H "Content-Type: application/json" http://localhost:3000/tasks
+```
+
+Dazu gibt es ein kleines Kommandozeilentool, mit dem der Export in einzelne Import Dateien aufgeteilt wird.

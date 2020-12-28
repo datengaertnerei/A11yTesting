@@ -44,7 +44,7 @@ Der Dashboard Webserver ist über http Port 4000 erreichbar. Mi folgendem cURL B
 curl -X GET -o pally.json http://localhost:3000/tasks
 ```
 
-Mit einem POST auf diesen Endpunkt kann man einzelne Tasks einspielen.
+Mit einem POST auf diesen Endpunkt kann man einzelne Tasks einspielen. Dazu gibt es ein kleines Kommandozeilentool, mit dem der Export in einzelne Import Dateien aufgeteilt wird.
 
 ## Lighthouse Batch Spider
 

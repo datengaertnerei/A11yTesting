@@ -38,7 +38,13 @@ Im pally Verzeichnis stehen die Konfigurationsdateien für ein Pa11y Dashboard D
 docker-compose up -d
 ```
 
-Der Dashboard Webserver ist über http Port 4000 erreichbar.
+Der Dashboard Webserver ist über http Port 4000 erreichbar. Mi folgendem cURL Befehl bekommt man alle konfigurierten Tasks über den Webservice als JSON Export:
+
+```
+curl -X GET -o pally.json http://localhost:3000/tasks
+```
+
+Mit einem POST auf diesen Endpunkt kann man einzelne Tasks einspielen.
 
 ## Lighthouse Batch Spider
 

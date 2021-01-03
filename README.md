@@ -22,6 +22,7 @@
 
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 - [lighthouse-batch](https://github.com/mikestead/lighthouse-batch)
+- [HTML Code Sniffer](http://squizlabs.github.io/HTML_CodeSniffer/)
 - [Sa11y QA assistant](https://ryersondmp.github.io/sa11y/)
 - [axe-core Browser Plugin](https://github.com/dequelabs/axe-core)
 - [Pa11y](https://pa11y.org/)

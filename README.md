@@ -36,13 +36,13 @@
 Im lighthouse Verzeichnis liegt die Konfiguration für eine automatisierte Lighthouse Auswertung einer Website. Dazu baut man sich einmalig ein passendes Docker Image:
 
 ```
-docker build -t datengaertnerei/lhbatch .
+docker build -t datengaertner/lhbatch .
 ```
 
 Danach ruft man den Batch so auf:
 
 ```
-docker run --rm -e SITE="https://www.datengaertnerei.com/" datengaertnerei/lhbatch > summary.csv
+docker run --rm -e SITE="https://www.datengaertnerei.com/" datengaertner/lhbatch > summary.csv
 ```
 
 Das Ergebnis ist eine CSV Tabelle mit den konsolidierten Lighthouse Ergebnissen.

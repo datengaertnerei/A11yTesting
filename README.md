@@ -39,6 +39,12 @@ Im lighthouse Verzeichnis liegt die Konfiguration für eine automatisierte Light
 docker build -t datengaertner/lhbatch .
 ```
 
+oder lädt es vom Docker Hub:
+
+```
+docker pull datengaertner/lhbatch:latest
+```
+
 Danach ruft man den Batch so auf:
 
 ```

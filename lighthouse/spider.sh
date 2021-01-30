@@ -13,4 +13,4 @@ wget -r --spider --delete-after --force-html -l $DEPTH $SITE 2>&1 \
 
 lighthouse-batch -f $OUTPUT --no-report --params "--screenEmulation.disabled --form-factor=\"desktop\" --throttling.rttMs=40  --throttling.throughputKbps=10240  --throttling.requestLatencyMs=0  --throttling.downloadThroughputKbps=0  --throttling.uploadThroughputKbps=0  --throttling.cpuSlowdownMultiplier=1 --no-emulatedUserAgent" > lh.log 2>&1
 json2csv -i report/lighthouse/summary.json -o report/lighthouse/summary.csv --flatten-objects
-cat report/lighthouse/summary.csv
+cp report/lighthouse/summary.csv /dev/stdout

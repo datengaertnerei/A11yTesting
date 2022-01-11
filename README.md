@@ -8,6 +8,7 @@
 - [EU Richtlinie 2016/2102 über den barrierefreien Zugang zu den Websites und mobilen Anwendungen öffentlicher Stellen](https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016L2102&from=DE)
 - [EU Richtlinie 2019/882 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen](https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32019L0882&from=DE)
 - [Barrierefreie-Informationstechnik-Verordnung - BITV 2.0](https://www.gesetze-im-internet.de/bitv_2_0/BJNR184300011.html)
+- [Barrierefreiheitsstärkungsgesetz](http://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl121s2970.pdf)
 
 ### Quellen
 
